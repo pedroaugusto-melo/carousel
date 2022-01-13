@@ -28,6 +28,7 @@ body {
     z-index: 5;
     display: flex;
     column-gap: 1rem;
+    opacity: 0;
 }
 
 .marks .mark {
