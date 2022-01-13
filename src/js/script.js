@@ -6,6 +6,7 @@ const marksDiv = document.querySelector('.marks');
 const gallery = document.querySelector('.gallery');
 
 let actualImage = 1;
+updateMarks();
 
 function updateMarks() {
     marks.forEach(mark => {
@@ -48,6 +49,5 @@ function prevImage() {
 
 btnNext.addEventListener('click', nextImage);
 btnPrev.addEventListener('click', prevImage);
-updateMarks();
-setMarksMargin();
 window.onresize = setMarksMargin;
+window.onload = setMarksMargin;
