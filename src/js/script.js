@@ -26,7 +26,7 @@ function updateMarks() {
 
 function setMarksMargin() {
     const galleryHeight = gallery.getBoundingClientRect().height;
-    marksDiv.style.marginBottom = `${1.15 * galleryHeight}px`;
+    marksDiv.style.marginBottom = `${1.2 * galleryHeight}px`;
     marksDiv.style.opacity = '1';
 }
 
