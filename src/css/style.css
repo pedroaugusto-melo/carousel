@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .marks {
+    position: absolute;
+    z-index: 5;
+    /*margin-bottom: 40vw;*/
+    display: flex;
+    column-gap: 1rem;
+}
+
+.marks .mark {
+    background-color: #FFFFFF;
+    border: 0.1rem solid #000000;
+    border-radius: 0.5rem;
+    width: 7vw;
+    height: 0.5rem;
+}
+
+
+.gallery {
+    width: 90vw;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    color: #000000;
+    display: flex;
+    column-gap: 80vw;
+    z-index: 5;
+}
+
+.controls .control:hover {
+    cursor: pointer;
+}
+
+.gallery .images {
+    display: flex;
+    transition: transform 1s linear;
+}
+
+.gallery .image {
+    width: 90vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery figcaption {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.gallery img {
+    width: 80%;
+}
