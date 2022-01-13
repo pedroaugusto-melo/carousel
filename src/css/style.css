@@ -26,7 +26,6 @@ body {
 .carousel .marks {
     position: absolute;
     z-index: 5;
-    /*margin-bottom: 40vw;*/
     display: flex;
     column-gap: 1rem;
 }
@@ -42,6 +41,7 @@ body {
 
 .gallery {
     width: 90vw;
+    max-width: 70rem;
     display: flex;
     overflow-x: hidden;
     position: relative;
@@ -52,7 +52,7 @@ body {
     position: absolute;
     color: #000000;
     display: flex;
-    column-gap: 80vw;
+    column-gap: clamp(0rem, 80vw, 70rem);
     z-index: 5;
 }
 
@@ -67,6 +67,7 @@ body {
 
 .gallery .image {
     width: 90vw;
+    max-width: 70rem;
     position: relative;
     display: flex;
     flex-direction: column;

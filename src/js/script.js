@@ -25,21 +25,23 @@ function updateMarks() {
 
 function setMarksMargin() {
     const galleryHeight = gallery.getBoundingClientRect().height;
-    marksDiv.style.marginBottom = `${1.25 * galleryHeight}px`;
+    marksDiv.style.marginBottom = `${1.15 * galleryHeight}px`;
 }
 
 function nextImage() {
+    const galleryWidth = gallery.getBoundingClientRect().width;
     if (actualImage < 4) {
-        imgs.style.transform = `translateX(-${actualImage * 90}vw)`;
+        imgs.style.transform = `translateX(-${actualImage * galleryWidth}px)`;
         actualImage++;
     }
     updateMarks();
 }
 
 function prevImage() {
+    const galleryWidth = gallery.getBoundingClientRect().width;
     if (actualImage > 1) {
         actualImage--;
-        imgs.style.transform = `translateX(-${(actualImage - 1) * 90}vw)`
+        imgs.style.transform = `translateX(-${(actualImage - 1) * galleryWidth}px)`
     }
     updateMarks();
 }
